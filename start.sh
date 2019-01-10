@@ -11,6 +11,10 @@ curl -fsSL https://get.rvm.io | bash -s stable
 # install node dependency manager
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
 
+# install fresh shell script
+# curl -fsSL https://get.freshshell.com | bash
+bash -c "`curl -sL https://get.freshshell.com`"
+
 # install powrc
 curl get.pow.cx | sh
 
