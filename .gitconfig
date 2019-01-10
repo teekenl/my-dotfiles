@@ -1,0 +1,14 @@
+[user]
+  name = teekenl
+  email = teekenlau@gmail.com
+[alias]
+  cl = clone
+  ci = commit
+  co = checkout
+  cm = commit -m
+  a = commit --amend
+  r = reset
+  co = checkout
+  p = push
+  plo = pull origin
+  po = push origin
