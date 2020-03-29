@@ -50,3 +50,9 @@ source ~/.zshrc
 
 # load git configuration 
 ln ./.gitconfig ~/.gitconfig
+
+# print out yarn --version
+yarn --version
+
+# install http-server
+yarn global add http-server
