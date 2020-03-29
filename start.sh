@@ -48,3 +48,5 @@ zsh  --version
 ln ./index.txt ~/.zshrc
 source ~/.zshrc
 
+# load git configuration 
+ln ./.gitconfig ~/.gitconfig

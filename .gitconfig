@@ -1,14 +1,25 @@
 [user]
-  name = teekenl
-  email = teekenlau@gmail.com
+	name = teekenl
+	email = teekenlau@gmail.com
+[core]
+	excludesfile = /Users/ken/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [alias]
-  cl = clone
-  ci = commit
-  co = checkout
-  cm = commit -m
-  a = commit --amend
-  r = reset
-  co = checkout
-  p = push
-  plo = pull origin
-  po = push origin
+	cl = clone
+	ci = commit
+	co = checkout
+	cm = commit -m
+	a = commit --amend
+	r = reset
+	co = checkout
+	p = push
+	plo = pull origin
+	po = push origin
+	amend = commit --amend --no-edit
+[commit]
+	template = /Users/ken/.stCommitMsg
