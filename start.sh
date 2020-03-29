@@ -2,6 +2,10 @@
 
 NODE_VERSION = "v6.14.1"
 
+# install x-code 
+xcode-select --install
+# xcode-select -r # reset xcode-select
+
 # install brew from renite shell script
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | sh
 
@@ -23,7 +27,24 @@ nvm install $NODE_VERSION
 # print out the version
 brew -v
 
+# install iterm 2 terminal shell
+brew cask install iterm2
+
 brew tap ethereum/ethereum
 
 # install the library
 brew bundle
+
+# install oh-my-zsh for zsh configuration.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# print out zsh version
+zsh  --version
+
+# upgrade to get latest features
+# upgrade_oh_my_zsh
+
+# load zsh configuration
+ln ./index.txt ~/.zshrc
+source ~/.zshrc
+

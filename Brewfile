@@ -11,6 +11,7 @@ docker
 nvm
 go
 #git
+zsh
 imagemagick
 postgres
 postgis
