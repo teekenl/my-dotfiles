@@ -45,7 +45,7 @@ zsh  --version
 # upgrade_oh_my_zsh
 
 # load zsh configuration
-ln ./index.txt ~/.zshrc
+ln ./.zshrc ~/.zshrc
 source ~/.zshrc
 
 # load git configuration 
