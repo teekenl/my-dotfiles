@@ -1,9 +1,16 @@
 the_silver_searcher
+heroku
+geth
+gdal
+thefuck
+minikube
+rails
+#tmux
 docker-compose
 docker
 nvm
 go
-git
+#git
 imagemagick
 postgres
 postgis
