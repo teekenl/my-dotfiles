@@ -3,9 +3,9 @@ heroku
 geth
 gdal
 thefuck
-minikube
+vim
 rails
-#tmux
+tmux
 docker-compose
 docker
 nvm
