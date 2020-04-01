@@ -56,3 +56,9 @@ yarn --version
 
 # install http-server
 yarn global add http-server
+
+# install vim plugin package manager 
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
+
+# load vim configuration
+ln ./.vimrc ~/.vimrc
