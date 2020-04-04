@@ -4,11 +4,30 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ken/.oh-my-zsh"
 
+
+POWERLEVEL9K_MODE='nerdfont-complete'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# Add new line after prompt
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# Change background of git status if it is modified
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
+
+# # Set the branch icon
+POWERLEVEL9K_VCS_GIT_GITHUB_ICON=$'\uF113'
+# # Add a space in the first prompt
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
+# # Visual customisation of the second prompt line
+# local user_symbol="$"
+# if [[ $(print -P "%#") =~ "#" ]]; then
+#     user_symbol = "#"
+# fi
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%{%B%F{black}%K{yellow}%} $user_symbol%{%b%f%k%F{yellow}%} %{%f%}"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -68,7 +87,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,4 +130,12 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
 
 alias stree="open -a SourceTree"
-alias chrome="open -a 'Google Chrome'"
+
+# Syntax highlighting, green valid, red invalid
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Colorise the top Tabs of Iterm2 with the same color as background
+# Just change the 18/26/33 wich are the rgb values
+echo -e "\033]6;1;bg;red;brightness;18\a"
+echo -e "\033]6;1;bg;green;brightness;26\a"
+echo -e "\033]6;1;bg;blue;brightness;33\a"

@@ -12,6 +12,9 @@ nvm
 go
 #git
 zsh
+zsh-completions
+zsh-syntax-highlighting
+fzf
 imagemagick
 postgres
 postgis

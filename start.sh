@@ -44,6 +44,16 @@ zsh  --version
 # upgrade to get latest features
 # upgrade_oh_my_zsh
 
+# install nerd-font so that we can use NerdFont Awesome Icons.
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+
+# install necessary custom plugins to beautify the iterm shell
+# install PowerLevel9k theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+# install ZSH Auto Suggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
 # load zsh configuration
 ln ./.zshrc ~/.zshrc
 source ~/.zshrc
