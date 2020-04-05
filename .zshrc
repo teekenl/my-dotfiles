@@ -3,7 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ken/.oh-my-zsh"
-
+# for tmux default terminal color
+export TERM="xterm-256color"
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 # Set name of the theme to load --- if set to "random", it will
@@ -128,7 +129,7 @@ export PATH="$PATH:~/.nvm/bin"
 [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+export PATH="/usr/local/bin/tmux:$PATH"
 
 alias stree="open -a SourceTree"
 

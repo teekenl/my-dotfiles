@@ -55,8 +55,14 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # load zsh configuration
-ln ./.zshrc ~/.zshrc
+ln .zshrc ~/.zshrc
 source ~/.zshrc
+
+# create symbolink to ~/.tmux.confg
+ln tmux.conf ~/.tmux.conf
+
+# source tmux.conf
+tmux source-file ~/.tmux.conf
 
 # load git configuration 
 ln ./.gitconfig ~/.gitconfig
@@ -71,4 +77,4 @@ yarn global add http-server
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
 
 # load vim configuration
-ln ./.vimrc ~/.vimrc
+ln .vimrc ~/.vimrc
