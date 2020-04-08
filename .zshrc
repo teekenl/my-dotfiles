@@ -132,6 +132,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/bin/tmux:$PATH"
 
 alias stree="open -a SourceTree"
+alias chrome="open -a 'Google Chrome'"
 
 # Syntax highlighting, green valid, red invalid
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
