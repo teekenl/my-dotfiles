@@ -6,8 +6,10 @@ thefuck
 vim
 rails
 tmux
-docker-compose
+docker-machine
 docker
+kubernetes-cli
+redis
 nvm
 go
 #git
@@ -16,7 +18,7 @@ zsh-completions
 zsh-syntax-highlighting
 fzf
 imagemagick
-postgres
+postgresql
 postgis
 yarn
 homebrew/cask/google-cloud-sdk

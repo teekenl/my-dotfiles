@@ -35,6 +35,9 @@ brew tap ethereum/ethereum
 # install the library
 brew bundle
 
+# install docker
+brew cask install docker
+
 # install oh-my-zsh for zsh configuration.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
