@@ -81,3 +81,20 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
 
 # load vim configuration
 ln .vimrc ~/.vimrc
+
+# print out python version
+python -v
+
+# Install Pip (Python package manager)
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+
+# print out pip version and remove its installer.
+pip3 --version
+rm get-pip.py
+
+# Upgrade version
+pip3 install --upgrade pip
+
+# Install jupyter notebook
+pip3 install jupyter
