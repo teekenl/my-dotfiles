@@ -98,3 +98,6 @@ pip3 install --upgrade pip
 
 # Install jupyter notebook
 pip3 install jupyter
+
+# Install packages for machine learning
+pip3 install scikit-learn scipy pandas matplotlib
