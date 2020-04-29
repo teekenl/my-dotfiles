@@ -12,6 +12,7 @@ kubernetes-cli
 redis
 nvm
 go
+ngrep # network analyzer
 #git
 zsh
 zsh-completions
