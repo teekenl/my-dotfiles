@@ -133,6 +133,8 @@ export PATH="/usr/local/bin/tmux:$PATH"
 
 alias stree="open -a SourceTree"
 alias chrome="open -a 'Google Chrome'"
+# if installed through apps
+#alias mvim="/Applications/MacVim.app/Contents/bin/mvim" 
 
 # Syntax highlighting, green valid, red invalid
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

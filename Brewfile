@@ -1,4 +1,5 @@
 the_silver_searcher
+macvim # Mac GUI Vim
 heroku
 geth
 gdal
