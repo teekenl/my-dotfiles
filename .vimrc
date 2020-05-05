@@ -65,6 +65,10 @@ set background=dark
 let g:oceanic_next_terminal_italic = 1
 let g:oceanic_next_terminal_bold = 1
 
+" to search text in vim.
+Plugin 'mileszs/ack.vim'
+let g:ackprg = 'ag --vimgrep'
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 

@@ -4,6 +4,7 @@ geth
 gdal
 thefuck
 vim
+#ack # only required if installed in vimrc
 rails
 tmux
 docker-machine
