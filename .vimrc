@@ -35,7 +35,7 @@ nmap :s :split
 set nocp
 
 " Set SPELLCHeCK YYAH
-set spell spelllang=en_ca
+" set spell spelllang=en_ca
 " hi SpellBad cterm=underline,bold
 "set highlight SpellBad      ctermfg=Red         term=Reverse        guisp=Red       gui=undercurl   ctermbg=White 
 
