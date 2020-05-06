@@ -132,7 +132,6 @@ autocmd FileType ruby setlocal commentstring=#\ %s
 
 " Files stucture tree
 Plugin 'scrooloose/nerdtree'
-"map <C-m> :NERDTreeToggle<CR>
 map - :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<cr>
 " autocmd BufWinEnter * NERDTreeFind
