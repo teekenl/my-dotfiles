@@ -61,7 +61,10 @@ hi LineNr ctermfg=DarkGrey guifg=#A9A9A9
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+" use powerline symbol
 let g:airline_powerline_fonts = 1
+
+Plugin 'jelera/vim-javascript-syntax'
 
 " to search text in vim.
 Plugin 'mileszs/ack.vim'
