@@ -137,6 +137,56 @@ map <leader>r :NERDTreeFind<cr>
 " autocmd BufWinEnter * NERDTreeFind
 map ] :NERDTreeFind<CR>
 
+" Vim Dev Icons
+Plugin 'ryanoasis/vim-devicons'
+" Set to use Hack Nerd Font
+set guifont=Hack\ Nerd\ Font:h13 
+set encoding=UTF-8
+
+" NERDTrees File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg)
+ exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guifg='. a:guifg
+ exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+" Link the folder icon with directory
+hi! link NERDTreeFlags NERDTreeDir
+hi NERDTreeDir guifg=#F69C01
+
+" Customize color for different file extension
+call NERDTreeHighlightFile('rb', 'DarkRed', 'none', '#E06C75')
+call NERDTreeHighlightFile('py', 'white', 'none', '#3792CB')
+call NERDTreeHighlightFile('config', 'yellow', 'none', '#F8BD7F')
+call NERDTreeHighlightFile('json', 'yellow', 'none', '#d45434')
+call NERDTreeHighlightFile('html', 'yellow', 'none', '#F16529')
+call NERDTreeHighlightFile('htm', 'yellow', 'none', '#F16529')
+call NERDTreeHighlightFile('erb', 'yellow', 'none', '#F16529')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan')
+call NERDTreeHighlightFile('scss', 'cyan', 'none', '#CF649A')
+call NERDTreeHighlightFile('less', 'cyan', 'none', '#CF649A')
+call NERDTreeHighlightFile('sass', 'cyan', 'none', '#CF649A')
+call NERDTreeHighlightFile('js', 'yellow', 'none', '#F7DF1D')
+call NERDTreeHighlightFile('jsx', 'yellow', 'none', '#F7DF1D')
+call NERDTreeHighlightFile('ts', 'yellow', 'none', '#F7DF1D')
+call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868')
+call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868')
+call NERDTreeHighlightFile('Procfile', 'Gray', 'none', '#9E7CC1')
+call NERDTreeHighlightFile('sql', 'Gray', 'none', '#336791')
+call NERDTreeHighlightFile('.dockerignore', 'Gray', 'none', '#2496ED')
+call NERDTreeHighlightFile('Dockerfile', 'Gray', 'none', '#2496ED')
+call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868')
+call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868')
+call NERDTreeHighlightFile('txt', 'Gray', 'none', '#686868')
+call NERDTreeHighlightFile('md', 'Gray', 'none', '#686868')
+call NERDTreeHighlightFile('png', 'Gray', 'none', '#209E16')
+call NERDTreeHighlightFile('ico', 'Gray', 'none', '#209E16')
+call NERDTreeHighlightFile('jpeg', 'Gray', 'none', '#209E16')
+call NERDTreeHighlightFile('jpg', 'Gray', 'none', '#209E16')
+
+" Hide the brackets in nerd tree
+autocmd FileType nerdtree syntax match hideBracketsInNerdTree "\]" contained conceal containedin=ALL
+autocmd FileType nerdtree syntax match hideBracketsInNerdTree "\[" contained conceal containedin=ALL
+
 call vundle#end()            " required
 
 " Ctrl-P configurations
