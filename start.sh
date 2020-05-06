@@ -44,6 +44,28 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # print out zsh version
 zsh  --version
 
+# fzf to install useful key bindings and fuzzy completions
+#$(brew --prefix)/opt/fzf/install
+
+# install vim plugin package manager 
+git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/plugin/Vundle.vim
+
+# load vim configuration
+ln .vimrc $HOME/.vimrc
+
+if [ ! -d "$HOME/.vim/colors" ]
+then
+  mkdir -p $HOME/.vim/colors
+fi
+
+if [ ! -d "$HOME/.vim/autoload" ]
+then
+  mkdir -p $HOME/.vim/autoload
+fi
+
+ln vim/colors/onedark.vim $HOME/.vim/colors/
+ln vim/autoload/onedark.vim $HOME/.vim/autoload/
+
 # upgrade to get latest features
 # upgrade_oh_my_zsh
 
@@ -75,12 +97,6 @@ yarn --version
 
 # install http-server
 yarn global add http-server
-
-# install vim plugin package manager 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
-
-# load vim configuration
-ln .vimrc ~/.vimrc
 
 # print out python version
 python -v

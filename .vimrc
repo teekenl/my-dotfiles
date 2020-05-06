@@ -4,9 +4,6 @@ syntax enable
 set shell=bash
 syntax on 
 filetype plugin indent on
-filetype on
-filetype indent on
-filetype plugin on
 set clipboard=unnamedplus
 set clipboard^=unnamed
 set mouse=r
@@ -51,19 +48,14 @@ set tags=tags;/
 let g:solarized_termcolors = 16
 call vundle#begin()
 
-" Set Theme
-" Plugin 'junegunn/seoul256.vim'
-" colo seoul256
-
-" Ocean theme VS
-Plugin 'mhartington/oceanic-next'
+" Vim > 8, enable gui colors in terminal
 if (has("termguicolors"))
   set termguicolors
- endif
-colorscheme OceanicNext
-set background=dark
-let g:oceanic_next_terminal_italic = 1
-let g:oceanic_next_terminal_bold = 1
+endif
+
+" One Dark VS
+colorscheme onedark
+hi LineNr ctermfg=DarkGrey guifg=#A9A9A9
 
 " to search text in vim.
 Plugin 'mileszs/ack.vim'
