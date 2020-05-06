@@ -75,22 +75,22 @@ brew cask install font-hack-nerd-font
 
 # install necessary custom plugins to beautify the iterm shell
 # install PowerLevel9k theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
 # install ZSH Auto Suggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # load zsh configuration
-ln .zshrc ~/.zshrc
-source ~/.zshrc
+ln .zshrc $HOME/.zshrc
+source $HOME/.zshrc
 
-# create symbolink to ~/.tmux.confg
-ln tmux.conf ~/.tmux.conf
+# create symbolink to $HOME/.tmux.confg
+ln tmux.conf $HOME/.tmux.conf
 
 # source tmux.conf
-tmux source-file ~/.tmux.conf
+tmux source-file $HOME/.tmux.conf
 
 # load git configuration 
-ln ./.gitconfig ~/.gitconfig
+ln ./.gitconfig $HOME/.gitconfig
 
 # print out yarn --version
 yarn --version
