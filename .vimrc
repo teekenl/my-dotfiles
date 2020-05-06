@@ -3,15 +3,17 @@ set number
 syntax enable
 set shell=bash
 syntax on 
-filetype plugin indent on
+filetype indent on
 set clipboard=unnamedplus
 set clipboard^=unnamed
 set mouse=r
 set backspace=indent,eol,start
 set laststatus=2
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
-autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
 
+set shiftwidth=2
+set tabstop=2
+set autoindent
+set smartindent
 
 " max text length
 au BufRead,BufNewFile *.rb setlocal textwidth=120
