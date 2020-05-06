@@ -57,6 +57,10 @@ endif
 colorscheme onedark
 hi LineNr ctermfg=DarkGrey guifg=#A9A9A9
 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 1
+
 " to search text in vim.
 Plugin 'mileszs/ack.vim'
 let g:ackprg = 'ag --vimgrep'
