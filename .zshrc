@@ -11,7 +11,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Add new line after prompt
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
