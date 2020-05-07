@@ -55,6 +55,10 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+Plugin 'luochen1990/rainbow'
+" toggle it on/off :RainbowToggle
+let g:rainbow_active = 1
+
 " One Dark VS
 colorscheme onedark
 hi LineNr ctermfg=DarkGrey guifg=#A9A9A9
