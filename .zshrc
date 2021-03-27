@@ -133,8 +133,12 @@ export PATH="/usr/local/bin/tmux:$PATH"
 
 alias stree="open -a SourceTree"
 alias chrome="open -a 'Google Chrome'"
+alias f="fuck"
+alias gc="bin/spring stop; gco -- ."
+alias migrate="bin/rails db:migrate"
+alias flow="~/Development/setup_cohortflow.bash"
 # if installed through apps
-#alias mvim="/Applications/MacVim.app/Contents/bin/mvim" 
+#alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 
 # Syntax highlighting, green valid, red invalid
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -145,6 +149,10 @@ echo -e "\033]6;1;bg;red;brightness;18\a"
 echo -e "\033]6;1;bg;green;brightness;26\a"
 echo -e "\033]6;1;bg;blue;brightness;33\a"
 
+source /usr/local/share/chruby/chruby.sh
+
 # Fzf finder
 # Enable preview window by default
 export FZF_DEFAULT_OPTS='--height 40% --preview "cat {}" --preview-window right:60%:wrap'
+
+eval $(thefuck --alias)
