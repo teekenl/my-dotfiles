@@ -16,6 +16,7 @@ nvm
 go
 ngrep # network analyzer
 #git
+lazygit # git interface for lazy person
 zsh
 zsh-completions
 zsh-syntax-highlighting
