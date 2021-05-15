@@ -117,3 +117,6 @@ pip3 install jupyter
 
 # Install packages for machine learning
 pip3 install scikit-learn scipy pandas matplotlib
+
+# Install rustup (version manager) and cargo (package manager)
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
