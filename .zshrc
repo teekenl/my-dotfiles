@@ -13,6 +13,9 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 # Add new line after prompt
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -123,8 +126,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$PATH:~/.nvm/bin"
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/.cargo/bin"
 
 [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
 
@@ -132,10 +134,12 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/bin/tmux:$PATH"
 
 alias stree="open -a SourceTree"
+alias mvim="open -a MacVim"
 alias chrome="open -a 'Google Chrome'"
 alias f="fuck"
 alias gc="bin/spring stop; gco -- ."
 alias migrate="bin/rails db:migrate"
+alias rollback="bin/rails db:rollback"
 alias flow="~/Development/setup_cohortflow.bash"
 # if installed through apps
 #alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
@@ -149,10 +153,7 @@ echo -e "\033]6;1;bg;red;brightness;18\a"
 echo -e "\033]6;1;bg;green;brightness;26\a"
 echo -e "\033]6;1;bg;blue;brightness;33\a"
 
-source /usr/local/share/chruby/chruby.sh
-
 # Fzf finder
 # Enable preview window by default
 export FZF_DEFAULT_OPTS='--height 40% --preview "cat {}" --preview-window right:60%:wrap'
-
 eval $(thefuck --alias)
